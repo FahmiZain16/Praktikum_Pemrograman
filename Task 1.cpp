@@ -8,9 +8,6 @@ long long installment = 200000;
 long long insurance = 150000;
 
 int main(){
-	//Memberikan judul untuk slip gaji karyawan
-	cout << "Payslip for Employee\n";
-	cout << "----------------------" << endl;
 	
 	//memasukkan nama lengkap karyawan
 	cout << "Input your name : ";
@@ -21,6 +18,10 @@ int main(){
 	cout << "Input your Gross Salary : ";
 	cin >> gross_salary;
 	cout << endl;
+	
+		//Memberikan judul untuk slip gaji karyawan
+	cout << "Payslip for Employee\n";
+	cout << "----------------------" << endl;
 	
 	//hasil keluaran adalah sebagai berikut : 
 	cout <<"Name \t\t: "<< name << endl; //mengeluarkan nama karyawan
