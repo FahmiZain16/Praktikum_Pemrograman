@@ -17,8 +17,8 @@ int main(){
 	getline(cin, name); //memasukkan nama karyawan
 	cout <<"Gross Salary \t: Rp";
 	cin >> gross_salary; "\n"; //memasukkan gaji kotor karyawan
-	tax = gross_salary*15/100; //melakukan perhitungan pajak sebesar 20% dari gaji kotor
-	cout << "Tax (15%) \t: Rp" << tax << endl; //mengeluarkan pajak yang akan memotong gaji
+	tax = gross_salary/10; //melakukan perhitungan pajak sebesar 20% dari gaji kotor
+	cout << "Tax (10%) \t: Rp" << tax << endl; //mengeluarkan pajak yang akan memotong gaji
 	cout << "Installment \t: Rp";
 	cin >> installment; //memasukkan biaya cicilan yang bersifat tetap
 	cout << "Insurance \t: Rp"; 
