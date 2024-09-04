@@ -8,24 +8,15 @@ long long installment = 200000;
 long long insurance = 150000;
 
 int main(){
-	
-	//memasukkan nama lengkap karyawan
-	cout << "Input your name : ";
-	getline(cin,name);
-	cout << endl;
-	
-	//memasukkan gaji bruto atau gaji kotor
-	cout << "Input your Gross Salary : ";
-	cin >> gross_salary;
-	cout << endl;
-	
 		//Memberikan judul untuk slip gaji karyawan
 	cout << "Payslip for Employee\n";
-	cout << "----------------------" << endl;
+	cout << "--------------------------------" << endl;
 	
 	//hasil keluaran adalah sebagai berikut : 
-	cout <<"Name \t\t: "<< name << endl; //mengeluarkan nama karyawan
-	cout <<"Gross Salary \t: Rp" << gross_salary << endl; //mengeluarkan gaji kotor karyawan
+	cout <<"Name \t\t: ";
+	getline(cin, name); //memasukkan nama karyawan
+	cout <<"Gross Salary \t: Rp";
+	cin >> gross_salary; "\n"; //memasukkan gaji kotor karyawan
 	tax = gross_salary/5; // melakukan perhitungan pajak sebesar 20% dari gaji kotor
 	cout << "Tax (20%) \t: Rp" << tax << endl; //mengeluarkan pajak yang akan memotong gaji
 	cout << "Installment \t: Rp"<<installment << endl; //mengeluarkan biaya cicilan yang bersifat tetap
