@@ -8,5 +8,5 @@ run : soal1
 	./soal1
 			
 clean:
-	del -f Nomor1.o soal1
+	rm -f Nomor1.o soal1
 
