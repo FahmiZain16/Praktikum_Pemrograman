@@ -17,5 +17,5 @@ test : test2
 	./test2
 
 clean :
-	rm -f Nomor2.o soal2
-	rm -f Nomor2_test.o test1
+	del -f Nomor2.o soal2
+	del -f Nomor2_test.o test2
