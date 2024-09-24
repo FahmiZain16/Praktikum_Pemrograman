@@ -8,4 +8,4 @@ run : soal1
 	./soal1
 	
 clean :
-	del -f Vektor_FizzBuzz.o soal1.exe
+	rm -f Vektor_FizzBuzz.o soal1.exe

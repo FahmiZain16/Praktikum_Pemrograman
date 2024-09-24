@@ -8,4 +8,4 @@ run : soal2
 	./soal2
 	
 clean :
-	del -f ReverseVektor.o soal2.exe
+	rm -f ReverseVektor.o soal2.exe
