@@ -1,11 +1,24 @@
-soal1 : Barang_Swalayan.o
-	g++ Barang_swalayan.o -o soal1
-	
-Barang_Swalayan.o : Barang_Swalayan.cpp
-	g++ -c Barang_Swalayan.cpp -o Barang_Swalayan.o
-	
-test : soal1
-	./soal1
-	
+# Variables
+CXX = g++
+CXXFLAGS = -Wall
+TARGET = Barang_Swalayan
+SRC = Barang_Swalayan.cpp
+
+# Default target: compile the program
+all: $(TARGET)
+
+# Compile the Barang_Swalayan.cpp
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+# Run the program in test mode
+test: $(TARGET)
+	./$(TARGET) 
+
+# Clean up the compiled files
 clean :
-	del -f Barang_Swalayan.o soal1.exe
+	rm -f $(TARGET)
+
+
+# Phony targets to avoid conflicts
+.PHONY: all clean test
