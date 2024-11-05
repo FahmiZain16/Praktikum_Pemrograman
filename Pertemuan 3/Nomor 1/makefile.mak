@@ -1,12 +1,24 @@
-soal1 : Nomor1.o
-		g++ Nomor1.o -o soal1
-		
-Nomor1.o : Nomor1.cpp
-		g++ -c Nomor1.cpp Nomor1.o
-		
-run : soal1
-	./soal1
-			
-clean:
-	rm -f Nomor1.o soal1
+# Variables
+CXX = g++
+CXXFLAGS = -Wall
+TARGET = Nomor1
+SRC = Nomor1.cpp
 
+# Default target: compile the program
+all: $(TARGET)
+
+# Compile the Nomor1.cpp
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+# Run the program in test mode
+test: $(TARGET)
+	./$(TARGET) 
+
+# Clean up the compiled files
+clean :
+	rm -f $(TARGET)
+
+
+# Phony targets to avoid conflicts
+.PHONY: all clean test
