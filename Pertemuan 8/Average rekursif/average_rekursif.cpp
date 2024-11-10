@@ -29,7 +29,8 @@ int main(){
 	n = 5;
 	int br[5] = {3, 1, 7, 9, 10};
 	expected_output = 6;
-	cout << avg(sum(n , br) , n) ;
+	cout << "test 1 : n = 5; input = 3 1 7 9 10; expected output = 6\n";
+	cout << "output = " << avg(sum(n , br) , n) << endl;
 	if(avg(sum(n , br) , n) == expected_output ) cout << "test 1 passed\n";
 	else cout << "test 1 failed\n";
 	
@@ -37,7 +38,8 @@ int main(){
 	n = 7;
 	int cr[7] = {12, 10, 11, 9, 7, 7, 28};
 	expected_output = 12;
-	cout << avg(sum(n , cr) , n);
+	cout << "test 2 : n = 7; input = 12 10 11 9 7 7 28; expected output = 12\n";
+	cout<< "output = " << avg(sum(n , cr) , n) << endl;
 	if(avg(sum(n , cr) , n) == expected_output ) cout << "test 2 passed\n";
 	else cout << "test 2 failed\n";
 	
@@ -45,7 +47,8 @@ int main(){
 	n = 4;
 	int dr[4] = {21 , 13 , 41, 29};
 	expected_output = 26;
-	cout << avg(sum(n , dr) , n);
+	cout << "test 3 : n = 4; input = 21 13 41 29; expected output = 26\n";
+	cout << "output = " << avg(sum(n , dr) , n) << endl;
 	if(avg(sum(n , dr) , n) == expected_output ) cout << "test 3 passed\n";
 	else cout << "test 3 failed\n";
 	
