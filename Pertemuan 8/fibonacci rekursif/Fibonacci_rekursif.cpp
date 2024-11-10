@@ -15,18 +15,24 @@ int main(){
 	//test 1
 	n = 6;
 	long long expected_output = 8;
+	cout << "n = 6; expected output = 8\n";
+	cout << "output = " << fibonacci(n) << endl;
 	if(fibonacci(n) == expected_output) cout << "test 1 passed\n";
 	else cout << "test 1 failed\n";
 	
 	//test 2
 	n = 9;
 	expected_output = 34;
+	cout << "n = 9; expected output = 34\n";
+	cout << "output = " << fibonacci(n) << endl;
 	if(fibonacci(n) == expected_output) cout << "test 2 passed\n";
 	else cout << "test 2 failed\n";
 	
 	//test 3
 	n = 20;
 	expected_output = 6765;
+	cout << "n = 20; expected output = 6765\n";
+	cout << "output = " << fibonacci(n) << endl;
 	if(fibonacci(n) == expected_output) cout << "test 3 passed\n";
 	else cout << "test 3 failed\n";
 }
